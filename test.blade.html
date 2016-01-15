@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>slider</title>
+
+        <!-- <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css"> -->
+        <!-- <link rel="stylesheet" href="/css/wise/snatch.css"> -->
+        <script src='jquery-1.11.1.min.js'></script>
+        <script src='jquery.multiple-slider.js'></script>
+        <style>
+        body {
+            margin: 0;
+            margin: 0;
+        }
+        .mar-top {
+            margin-top: 100px;
+        }
+        .slider-container {
+            margin-top: 0px;
+            width: 600px;
+            height: 100px;
+            overflow: hidden;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+       /* .slider-section {
+            float: left;
+        }*/
+        .slider-section li {
+            float: left;
+            width: 100px;
+            height: 100px;
+        }
+        .slider-section li img {
+            display: block;
+        }
+        </style>
+        <script>
+            $(document).ready(function() {
+                console.log($('.btn-right'));
+                var silder =$('.slider-section').multipleSlider({
+                    'preBtn': $('.btn-left'),
+                    'nextBtn': $('.btn-right'),
+                    'slideWidth': 100,
+                    'slideMargin': 10,
+                    'moveSlides': 5,
+                    'startSlide': 4,
+                    // 'autoMove': true
+                });
+                // console
+                // silder.goToSlide(7);
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <button class="btn-left">left</button>
+            <div class="slider-container">
+                <ul class="slider-section">
+                    <li>
+                        <img src="http://placehold.it/100x100">
+                        <span>aaaa</span>
+                    </li>
+                    <li>
+                        <img src="http://placehold.it/100x100">
+                          <span>aaaa</span>
+                    </li>
+                    <li>
+                        <img src="http://placehold.it/100x100">
+                        <span>cccc</span>
+                    </li>
+                    <li>
+                        <img src="http://placehold.it/100x100">
+                         <span>dddd</span>
+                    </li>
+                    <li>
+                        <img src="http://placehold.it/100x100">
+                         <span>eeee</span>
+                    </li>
+                    <li>
+                        <img src="http://placehold.it/100x100">
+                         <span>ffff</span>
+                    </li>
+                     <li>
+                        <img src="http://placehold.it/100x100">
+                         <span>gggg</span>
+                    </li>
+                     <li>
+                        <img src="http://placehold.it/100x100">
+                         <span>hhhh</span>
+                    </li>
+                     <li>
+                        <img src="http://placehold.it/100x100">
+                         <span>iiiii</span>
+                    </li>
+                     <li>
+                        <img src="http://placehold.it/100x100">
+                         <span>jjjjj</span>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn-right">right</button>
+            <div class="mar-top"></div>
+            <!-- <div class="slider-container">
+                <ul class="slider-section">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div> -->
+        </div>
+    </body>
+</html>
